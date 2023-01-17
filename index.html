@@ -10,6 +10,7 @@
   function createGif(x, y) {
     const kittygif = document.createElement('img')
     kittygif.src = gifURL + '#' + Math.random()
+    console.log(kittygif.src)
     kittygif.style.position = 'absolute'
     kittygif.style.top = y + 'px'
     kittygif.style.left = x + 'px'
