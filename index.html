@@ -14,13 +14,20 @@
 	 // createGif (-200,0)
   // createGif (0,0)
   
-  for (let i = 0; i < 100; i++) {
-		const x = i * 150
+  const gifWidth = 150
+  const gifHeight = 300
+  const num = window.innerWidth / gifWidth
+  
+  console.log (num)
+  for (let i = 0; i < num; i++) {
+
+		const x = i * gifWidth
     createGif (x-150,0)
   }
 
 
   document.body.style.backgroundColor = 'purple'
+  document.body.style.overflow = 'hidden'
   
 </script>
 
