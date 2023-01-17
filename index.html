@@ -1,6 +1,30 @@
+<body></body>
 <script>
 
+  function createGif (x, y) {
+    const kittygif = document.createElement('img')
+    kittygif.src = "catgif.gif"
+    kittygif.style.position = 'absolute'
+    kittygif.style.top = y + 'px'
+    kittygif.style.left = x + 'px'
+    document.body.appendChild(kittygif)
+    
+  }
+  
+	 createGif (-200,0)
+  createGif (0,0)
+  
+  for (let i = 0; i < 100; i++) {
+		const x = i * 150
+    createGif (x,0)
+  }
 
 
-
+  document.body.style.backgroundColor = 'purple'
+  
 </script>
+
+
+
+<!-- body></body -->
+<!-- script>document.body,innerText = "hello"</script -->
